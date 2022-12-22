@@ -7,10 +7,10 @@ import psycopg2.extras
 
 class ApiFlights(object):
     def __init__(self):
-        self.conn = psycopg2.connect(host='server.hu',
+        self.conn = psycopg2.connect(host='127.0.0.1',
                                      port=5432,
-                                     user='only_read',
-                                     password='qwerty',
+                                     user='postgres',
+                                     password='1234',
                                      database='flights')
         # Database Credentials
         self.conn.autocommit = True
